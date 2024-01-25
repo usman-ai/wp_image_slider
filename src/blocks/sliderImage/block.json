@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "slider/slider-image",
+	"version": "0.1.0",
+	"title": "Slider Image",
+	"category": "widgets",
+	"icon": "format-image",
+	"description": "Image to render in the Slider",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"imageId":{
+			"type":"number"
+		}
+	},
+	"parent": ["slider/slider"],
+	"textdomain": "slider",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}
